@@ -49,3 +49,20 @@ void addStudent(const string& filename) {
     file.close();
 }
 
+void viewStudents(const string& filename) {
+    ifstream file(filename);
+    if (file.is_open()) {
+        string line;
+        cout << "Student Records:" << endl;
+        cout << "ID\tName\t\tAge\tGrade" << endl;
+        cout << "----------------------------------------" << endl;
+        while (getline(file, line)) {
+            Student student = Student::fromCSV(line);
+            cout << student.id << "\t" << student.name << "\t" << student.age << "\t" << student.grade << endl;
+        }
+    } else {
+        cout << "Failed to open file." << endl;
+    }
+    file.close();
+}
+
