@@ -132,6 +132,9 @@ void deleteStudent(const string& filename) {
 }
 
 int main() {
+    const string filename = "students.txt";
+    int choice;
+
     
 }
 
