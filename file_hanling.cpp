@@ -72,4 +72,10 @@ void searchStudent(const string& filename) {
     cin >> id;
 
     ifstream file(filename);
-    
+    if (file.is_open()) {
+        string line;
+        bool found = false;
+        while (getline(file, line)) {
+            Student student = Student::fromCSV(line);
+            if (student.id == id) 
+           
