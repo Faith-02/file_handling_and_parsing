@@ -135,6 +135,15 @@ int main() {
     const string filename = "students.txt";
     int choice;
 do {
-      
+      cout << "\nStudent Database System" << endl;
+        cout << "1. Add Student" << endl;
+        cout << "2. View Students" << endl;
+        cout << "3. Search Student" << endl;
+        cout << "4. Delete Student" << endl;
+        cout << "5. Exit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        
 }
 
