@@ -87,4 +87,13 @@ void searchStudent(const string& filename) {
                 found = true;
                 break;
             }
-        
+        }
+        if (!found) {
+            cout << "Student with ID " << id << " not found." << endl;
+        }
+    } else {
+        cout << "Failed to open file." << endl;
+    }
+    file.close();
+}
+
