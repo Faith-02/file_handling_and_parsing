@@ -145,26 +145,9 @@ do {
         cin >> choice;
 
         switch (choice) {
-            case 1:
-                addStudent(filename);
-                break;
-            case 2:
-                viewStudents(filename);
-                break;
-            case 3:
-                searchStudent(filename);
-                break;
-            case 4:
-                deleteStudent(filename);
-                break;
-            case 5:
-                cout << "Exiting program..." << endl;
-                break;
-            default:
-                cout << "Invalid choice! Please try again." << endl;
+            
         }
     } while (choice != 5);
 
-    
+    return 0;
 }
-
