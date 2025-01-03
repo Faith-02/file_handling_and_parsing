@@ -104,4 +104,5 @@ void deleteStudent(const string& filename) {
 
     ifstream file(filename);
     ofstream tempFile("temp.txt");
-   
+    if (file.is_open() && tempFile.is_open()) {
+        
