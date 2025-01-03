@@ -121,4 +121,10 @@ void deleteStudent(const string& filename) {
         remove(filename.c_str());
         rename("temp.txt", filename.c_str());
 
-        
+        if (deleted) {
+            cout << "Student with ID " << id << " deleted successfully!" << endl;
+        } else {
+            cout << "Student with ID " << id << " not found." << endl;
+        }
+    } 
+
