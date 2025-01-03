@@ -105,4 +105,14 @@ void deleteStudent(const string& filename) {
     ifstream file(filename);
     ofstream tempFile("temp.txt");
     if (file.is_open() && tempFile.is_open()) {
+        string line;
+        bool deleted = false;
+        while (getline(file, line)) {
+            Student student = Student::fromCSV(line);
+            if (student.id == id) {
+                deleted = true;
+                continue; // Skip writing this record
+            }
+            tempFile << line << endl;
+        }
         
