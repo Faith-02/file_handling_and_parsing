@@ -66,3 +66,10 @@ void viewStudents(const string& filename) {
     file.close();
 }
 
+void searchStudent(const string& filename) {
+    cout << "Enter Student ID to search: ";
+    string id;
+    cin >> id;
+
+    ifstream file(filename);
+    
