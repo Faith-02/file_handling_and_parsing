@@ -115,4 +115,10 @@ void deleteStudent(const string& filename) {
             }
             tempFile << line << endl;
         }
+        file.close();
+        tempFile.close();
+
+        remove(filename.c_str());
+        rename("temp.txt", filename.c_str());
+
         
