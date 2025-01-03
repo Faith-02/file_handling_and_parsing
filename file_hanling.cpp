@@ -131,3 +131,7 @@ void deleteStudent(const string& filename) {
     }
 }
 
+int main() {
+    
+}
+
