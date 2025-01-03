@@ -78,4 +78,13 @@ void searchStudent(const string& filename) {
         while (getline(file, line)) {
             Student student = Student::fromCSV(line);
             if (student.id == id) 
-           
+            {
+                cout << "Student Found:" << endl;
+                cout << "ID: " << student.id << endl;
+                cout << "Name: " << student.name << endl;
+                cout << "Age: " << student.age << endl;
+                cout << "Grade: " << student.grade << endl;
+                found = true;
+                break;
+            }
+        
