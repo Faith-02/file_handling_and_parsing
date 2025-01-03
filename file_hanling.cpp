@@ -98,4 +98,10 @@ void searchStudent(const string& filename) {
 }
 
 void deleteStudent(const string& filename) {
-    
+    cout << "Enter Student ID to delete: ";
+    string id;
+    cin >> id;
+
+    ifstream file(filename);
+    ofstream tempFile("temp.txt");
+   
