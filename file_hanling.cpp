@@ -126,5 +126,8 @@ void deleteStudent(const string& filename) {
         } else {
             cout << "Student with ID " << id << " not found." << endl;
         }
-    } 
+    } else {
+        cout << "Failed to open file." << endl;
+    }
+}
 
