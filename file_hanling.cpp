@@ -97,3 +97,5 @@ void searchStudent(const string& filename) {
     file.close();
 }
 
+void deleteStudent(const string& filename) {
+    
